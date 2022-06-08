@@ -52,6 +52,18 @@
     <Compile Include="Assignment.Designer.cs">
       <DependentUpon>Assignment.cs</DependentUpon>
     </Compile>
+    <Compile Include="FileIOAss\CourseAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileIOAss\CourseAssignment.Designer.cs">
+      <DependentUpon>CourseAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileIOAss\DepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileIOAss\DepartmentForm.Designer.cs">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Assignment.resx">
       <DependentUpon>Assignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileIOAss\CourseAssignment.resx">
+      <DependentUpon>CourseAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileIOAss\DepartmentForm.resx">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

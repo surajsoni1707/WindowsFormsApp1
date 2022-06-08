@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,6 +75,20 @@ namespace WindowsFormsApp1
             if(result==DialogResult.Yes)
             {
                 Application.Exit();
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sd = new SaveFileDialog();
+            sd.DefaultExt = ".txt";
+            sd.Filter = "Text File(.txt)|*.txt|PDF File(.pdf)|*.pdf";
+            DialogResult result = sd.ShowDialog();
+            if(result==DialogResult.OK)
+            {
+                StreamWriter sw = new StreamWriter(sd.FileName);
+                sw.WriteLine(richTextBox1.Text);
+                sw.Close();
             }
         }
     }
